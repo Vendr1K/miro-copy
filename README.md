@@ -1,5 +1,12 @@
 # React + TypeScript + Vite
 
+start app:
+
+- `npm i` install devs
+- `npx msw init public --save` add mocks
+- `npm run dev` start app
+- `http://localhost:5173` open app in browser
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
