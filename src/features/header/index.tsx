@@ -1,3 +1,3 @@
 export function AppHeader() {
-  return <div>Header</div>;
+  return <div className="bg-amber-300">Header</div>;
 }
