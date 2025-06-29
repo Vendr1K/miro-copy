@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
       },
       {
         path: ROUTES.HOME,
-        loader: () => redirect(ROUTES.BOARDS),
+        loader: () => redirect(ROUTES.LOGIN),
       },
     ],
   },

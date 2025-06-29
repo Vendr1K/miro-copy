@@ -3,7 +3,7 @@ import { AppHeader } from '@/features/header';
 
 export function App() {
   return (
-    <div>
+    <div className="min-h-screen w-dvw  flex flex-col">
       <AppHeader />
       <Outlet />
     </div>

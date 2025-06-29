@@ -35,8 +35,8 @@ function BoardsListPage() {
   );
 
   return (
-    <div className='container mx-auto p-4'>
-      <h1>Boards list {CONFIG.API_BASE_URL}</h1>
+    <div className="container mx-auto p-4">
+      <h1 >Boards list {CONFIG.API_BASE_URL}</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -51,8 +51,7 @@ function BoardsListPage() {
         </button>
       </form>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        <div className='grid gap-4 grid-cols-3'>
-          
+        <div className="grid gap-4 grid-cols-3">
           {boardsQuery.data?.map((board) => (
             <Card key={board.id}>
               <CardHeader>
@@ -64,6 +63,7 @@ function BoardsListPage() {
               </CardHeader>
               <CardFooter>
                 <Button
+                  variant={'destructive'}
                   disabled={deleteBoardMutation.isPending}
                   onClick={() =>
                     deleteBoardMutation.mutate({
