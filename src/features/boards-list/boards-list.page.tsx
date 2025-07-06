@@ -36,7 +36,7 @@ function BoardsListPage() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 >Boards list {CONFIG.API_BASE_URL}</h1>
+      <h1>Boards list {CONFIG.API_BASE_URL}</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
